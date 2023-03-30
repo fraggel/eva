@@ -15,7 +15,7 @@
     <jsp:include page="cabecera.jsp"/>
     <div class="intro container-fluid"> 
       <div id="balloon-container">
-      <div class="divimgCabecera"><img id="imagenPrincipal" style="height: fit-content!important;" width="100%" src="../images/cabecera4.png"/>
+      <div class="divimgCabecera"><img id="imagenPrincipal" style="height: fit-content!important;" width="100%" src="../images/cabecera4.jpg"/>
       <h2 style="width: 100%;">¡¡FELIZ CUMPLEAÑOS PRINCESA!!</h2> 
       <p style="width: 100%;">Espero te guste tu sorpresa</p>
       </div> 
@@ -52,6 +52,6 @@
     setTimeout(change, 1000);
   }
 
-  window.onload = change();
+  //window.onload = change();
   </script>
 </html>

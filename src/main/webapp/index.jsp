@@ -9,10 +9,12 @@
 	  var GivenDate = '2023-04-14';
 	  var CurrentDate = new Date();
 	  GivenDate = new Date(GivenDate);
-	
-	  if(GivenDate > CurrentDate){
+	var queryString = window.location.search;
+	if(queryString.indexOf("TEST")==-1){
+	  if((GivenDate > CurrentDate)){
 		  window.location = "nodisponible.jsp";
 	  }
+	}
   </script>
     <style>
       *{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
@@ -265,7 +267,7 @@
     	  cmd.lineBreak();
           cmd.writeLine("Introduce la password en formato \"DDMM\"");
           let u=await cmd.readLine();
-          //if(u.toUpperCase().indexOf("SKIP".toUpperCase())==-1){
+          if(u.toUpperCase().indexOf("SKIP".toUpperCase())==-1){
 	          while(u.toUpperCase().indexOf("1404".toUpperCase() )==-1){
 	              cmd.writeError("No es correcto, introducir nuevamente");
 	              u=await cmd.readLine();
@@ -313,7 +315,7 @@
 	          await cmd.waitFor(250);
 	          cmd.writeLine("......");
 	          cmd.lineBreak();
-          //}
+          }
 	          u=await cmd.readLine("Arrancando aplicación");
           
           

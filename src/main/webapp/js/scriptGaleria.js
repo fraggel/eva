@@ -25,11 +25,13 @@ function getRandomStyles() {
 }
 
 function createBalloons(num) {
+	change();
   for (var i = num; i > 0; i--) {
     var balloon = document.createElement("div");
     balloon.className = "balloon";
     balloon.style.cssText = getRandomStyles();
     balloonContainer.append(balloon);
+	
   }
 }
 

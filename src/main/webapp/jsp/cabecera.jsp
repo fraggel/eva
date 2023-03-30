@@ -12,7 +12,8 @@
           <ul class="nav navbar-nav">
             <li class=""><a href="contenido.jsp">INICIO</a></li>
             <li><a href="sorpresas.jsp">SORPRESAS DE AYER Y HOY</a></li>
-            <li><a data-toggle="modal" data-target="#exampleModal" style="cursor: pointer">EVOCACIONES</a></li><!-- href="evocacion.jsp" -->
+            <!-- <li><a data-toggle="modal" data-target="#exampleModal" style="cursor: pointer">EVOCACIONES</a></li>-->
+            <li><a href="evocacion.jsp">EVOCACIONES</a></li>
             <li><a href="recuerdos.jsp">RECUERDOS DE AYER</a></li>
             <li><a href="palabrasa.jsp">PALABRAS DE AYER</a></li>
             <li><a href="recuerdosm.jsp">RECUERDOS DE MAÑANA</a></li>
