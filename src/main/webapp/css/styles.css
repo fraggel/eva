@@ -231,3 +231,9 @@ body {
     padding: 95px 14px 5px 100px
   }
 }
+@media only screen and (min-width: 1300px) {
+  
+  #imagenPrincipal{
+    width:80%!important;
+  }
+}

@@ -44,6 +44,6 @@ window.addEventListener("load", () => {
   createBalloons(30)
 });
 
-window.addEventListener("click", () => {
+/*window.addEventListener("click", () => {
   removeBalloons();
-});
+});*/

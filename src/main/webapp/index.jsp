@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Console</title>
+    <script>
+	  var GivenDate = '2023-04-14';
+	  var CurrentDate = new Date();
+	  GivenDate = new Date(GivenDate);
+	
+	  if(GivenDate > CurrentDate){
+		  window.location = "nodisponible.jsp";
+	  }
+  </script>
     <style>
       *{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
       #root{
@@ -116,7 +125,9 @@
               this.appendComponent(text);
           }
           async readLine(txt){
-        	  if(txt)window.location="jsp/inicio.jsp";
+        	  if(txt){
+        		  window.location="jsp/inicio.jsp";
+        	  }
               if(txt)this.writeLine(txt);
               let input=new Input(this.text_color);
               this.appendComponent(input);
@@ -251,51 +262,60 @@
           cmd.displayButton("ok",()=>{
               console.log("on ok button");
           });*/
-
-          cmd.lineBreak();
-          cmd.writeLine("Para compilar escriba \"javac *.jsp\"");
+    	  cmd.lineBreak();
+          cmd.writeLine("Introduce la password en formato \"DDMM\"");
           let u=await cmd.readLine();
-          while(u.toUpperCase().indexOf("javac *.jsp".toUpperCase() )==-1){
-              cmd.writeError("usa el comando: javac *.jsp");
-              u=await cmd.readLine();
-          }
-          cmd.writeLine("compilando..");
-          await cmd.waitFor(250);
-          cmd.writeLine("compile jsp/cabecera.jsp");
-          //cmd.writeLine("compile jsp/contenido.jsp");
-          //cmd.writeLine("compile jsp/evocacion.jsp");
-          cmd.writeLine("compile jsp/formulario.jsp");
-          cmd.writeLine("compile jsp/inicio.jsp");
-          //cmd.writeLine("compile jsp/palabrasa.jsp");
-          cmd.writeLine("compile jsp/pie.jsp");
-          cmd.writeLine("compile jsp/recuerdos.jsp");
-          //cmd.writeLine("compile jsp/recuerdosm.jsp");
-          //cmd.writeLine("compile jsp/sorpresas.jsp");
-          //cmd.writeLine("compile jsp/visorImagenes.jsp");
-          cmd.writeLine("compile jsp/visorVideos.jsp");
-          await cmd.waitFor(500);
-          cmd.writeSuccess("compilacion terminada correctamente!");
-          cmd.lineBreak();
-          //
-          cmd.writeLine("Para ejecutar escriba \"java -jar web.jar\"");
-          u=await cmd.readLine();
-          while(u.toUpperCase().indexOf("java -jar web.jar".toUpperCase())==-1){
-              cmd.writeError("usa el comando java -jar web.jar");
-              u=await cmd.readLine();
-          }
-          cmd.writeLine("espere..");
-          await cmd.waitFor(250);
-          cmd.writeLine(".");
-          await cmd.waitFor(250);
-          cmd.writeLine("..");
-          await cmd.waitFor(250);
-          cmd.writeLine("...");
-          await cmd.waitFor(250);
-          cmd.writeLine("....");
-          await cmd.waitFor(250);
-          cmd.writeLine("......");
-          cmd.lineBreak();
-          u=await cmd.readLine("Arrancando aplicación");
+          //if(u.toUpperCase().indexOf("SKIP".toUpperCase())==-1){
+	          while(u.toUpperCase().indexOf("1404".toUpperCase() )==-1){
+	              cmd.writeError("No es correcto, introducir nuevamente");
+	              u=await cmd.readLine();
+	          }
+	          cmd.lineBreak();
+	          cmd.writeLine("Para compilar escriba \"javac *.jsp\"");
+	          u=await cmd.readLine();
+	          while(u.toUpperCase().indexOf("javac *.jsp".toUpperCase() )==-1){
+	              cmd.writeError("usa el comando: javac *.jsp");
+	              u=await cmd.readLine();
+	          }
+	          cmd.writeLine("compilando..");
+	          await cmd.waitFor(250);
+	          cmd.writeLine("compile jsp/cabecera.jsp");
+	          //cmd.writeLine("compile jsp/contenido.jsp");
+	          //cmd.writeLine("compile jsp/evocacion.jsp");
+	          cmd.writeLine("compile jsp/formulario.jsp");
+	          cmd.writeLine("compile jsp/inicio.jsp");
+	          //cmd.writeLine("compile jsp/palabrasa.jsp");
+	          cmd.writeLine("compile jsp/pie.jsp");
+	          cmd.writeLine("compile jsp/recuerdos.jsp");
+	          //cmd.writeLine("compile jsp/recuerdosm.jsp");
+	          //cmd.writeLine("compile jsp/sorpresas.jsp");
+	          //cmd.writeLine("compile jsp/visorImagenes.jsp");
+	          cmd.writeLine("compile jsp/visorVideos.jsp");
+	          await cmd.waitFor(500);
+	          cmd.writeSuccess("compilacion terminada correctamente!");
+	          cmd.lineBreak();
+	          //
+	          cmd.writeLine("Para ejecutar escriba \"java -jar web.jar\"");
+	          u=await cmd.readLine();
+	          while(u.toUpperCase().indexOf("java -jar web.jar".toUpperCase())==-1){
+	              cmd.writeError("usa el comando java -jar web.jar");
+	              u=await cmd.readLine();
+	          }
+	          cmd.writeLine("espere..");
+	          await cmd.waitFor(250);
+	          cmd.writeLine(".");
+	          await cmd.waitFor(250);
+	          cmd.writeLine("..");
+	          await cmd.waitFor(250);
+	          cmd.writeLine("...");
+	          await cmd.waitFor(250);
+	          cmd.writeLine("....");
+	          await cmd.waitFor(250);
+	          cmd.writeLine("......");
+	          cmd.lineBreak();
+          //}
+	          u=await cmd.readLine("Arrancando aplicación");
+          
           
       }
       execute();  

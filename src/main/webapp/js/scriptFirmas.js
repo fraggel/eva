@@ -5,7 +5,7 @@ if(parent.frames["inferior"].playing){
 	parent.frames["inferior"].document.getElementById("miPlayer").play();
 	parent.frames["inferior"].document.getElementById("miPlayer2").pause();
 }
-for (var i = 0; i <= 7; i++) {
+for (var i = 0; i <= 8; i++) {
    // creamos el div contenedor
   var contenedor = document.createElement("DIV");
   contenedor.id = 'divContenedor'
@@ -119,6 +119,10 @@ for (var i = 0; i <= 7; i++) {
 			firma.innerHTML="El problema es que siempre quiero verte.....incluso justo después de haberte visto</br>";
 			break;
 		case 7:
+			contenedor.style.backgroundImage = "url('../images/postales/2.png')";
+			firma.innerHTML="Hoy te he visto tantas veces y en tantos sitios...</br>que he pensado que quizá me esté volviendo loco por tí.</br>Hoy te he escrito más mensajes de esos que nunca te llegan...</br>y he pensado que creo estar volviéndome loco por tí.</br>Hoy te he soñado tanto, que no quería despertarme, negándome a abrir los ojos y a conectarme de nuevo al mundo real...</br>por no dejar de estar contigo...</br>y he seguido pensando....</br>que me tengo que estar volviendo loco por tí..</br>Hoy me he dado cuenta que me gustas con tanta fuerza</br>que no hay nada en mi vida antes de conocerte...</br>Y entonces he confirmado</br>que estoy loco por tí";
+			break;
+		case 8:
 			contenedor.style.backgroundImage = "url('../images/postales/3.png')";
 			firma.innerHTML="No somos eternos, pero a nuestros ojos las estrellas si. Por eso esta estrella con tu nombre, al igual que tú, brillareis eternamente. Felicidades!";
 			break;

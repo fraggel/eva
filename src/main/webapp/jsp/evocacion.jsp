@@ -13,7 +13,7 @@
   <body> 
   <jsp:include page="cabecera.jsp"/>
     <div class="intro container-fluid"> 
-      <h2>Evocaciones</h2> 
+      <h2>Evocaciones (sólo algunas)</h2> 
        <p>Puede que tarde un poco en cargar todo, se paciente</p>
 	  <div id="image-gallery">
 	    <!-- <img id="current-image" src="../images/image1.jpg" alt="Image 1" style="max-width: 50%; margin: 20px;">-->

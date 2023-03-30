@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-WEB NO DISPONIBLE, POR FAVOR ESPERE AL 14/04/2023
+WEB NO DISPONIBLE, POR FAVOR ESPERE AL 14/04/2023</br>
+<input type="button" onclick="javascript:window.location='http://www.felicidadesprincesa.es'" value="Reintentar"/>
 </body>
 </html>
