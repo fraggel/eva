@@ -265,16 +265,12 @@
               console.log("on ok button");
           });*/
     	  cmd.lineBreak();
-          cmd.writeLine("Introduce la password en formato \"DDMM\"");
-          let u=await cmd.readLine();
-          if(u.toUpperCase().indexOf("SKIP".toUpperCase())==-1){
-	          while(u.toUpperCase().indexOf("1404".toUpperCase() )==-1){
-	              cmd.writeError("No es correcto, introducir nuevamente");
-	              u=await cmd.readLine();
-	          }
-	          cmd.lineBreak();
+          cmd.writeLine("Activa el audio (auriculares) y dale a enter");
+		  u=await cmd.readLine();
+		  cmd.lineBreak();
 	          cmd.writeLine("Para compilar escriba \"javac *.jsp\"");
 	          u=await cmd.readLine();
+			 if(u.toUpperCase().indexOf("SKIP".toUpperCase())==-1){
 	          while(u.toUpperCase().indexOf("javac *.jsp".toUpperCase() )==-1){
 	              cmd.writeError("usa el comando: javac *.jsp");
 	              u=await cmd.readLine();
